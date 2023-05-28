@@ -1,0 +1,3 @@
+[submodule "ext/LLamaSharp"]
+	path = ext/LLamaSharp
+	url = https://github.com/allisterb/LLamaSharp.git
