@@ -3,21 +3,67 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33103.201
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinAlpha.Interop.Llama", "WinAlpha.Interop.Llama\WinAlpha.Interop.Llama.csproj", "{CF0A0D62-6722-42B5-9F92-FCB046F4C848}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinAlpha.Interop.LLama", "WinAlpha.Interop.LLama\WinAlpha.Interop.LLama.csproj", "{CF0A0D62-6722-42B5-9F92-FCB046F4C848}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{B1A09C01-75D1-4DE4-BF45-0FD3114D1827}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LLamaSharp", "..\ext\LLamaSharp\LLama\LLamaSharp.csproj", "{D9AD1698-1571-4070-887B-6DAC7450D5F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LLama.Examples", "..\ext\LLamaSharp\LLama.Examples\LLama.Examples.csproj", "{754947FF-07C3-4B6A-A48E-BAB6111889D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		GPU|Any CPU = GPU|Any CPU
+		GPU|x64 = GPU|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Debug|x64.Build.0 = Debug|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.GPU|Any CPU.ActiveCfg = Release|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.GPU|Any CPU.Build.0 = Release|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.GPU|x64.ActiveCfg = Release|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.GPU|x64.Build.0 = Release|Any CPU
 		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Release|x64.ActiveCfg = Release|Any CPU
+		{CF0A0D62-6722-42B5-9F92-FCB046F4C848}.Release|x64.Build.0 = Release|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Debug|x64.ActiveCfg = Debug|x64
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Debug|x64.Build.0 = Debug|x64
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.GPU|Any CPU.ActiveCfg = GPU|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.GPU|Any CPU.Build.0 = GPU|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.GPU|x64.ActiveCfg = GPU|x64
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.GPU|x64.Build.0 = GPU|x64
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Release|x64.ActiveCfg = Release|x64
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5}.Release|x64.Build.0 = Release|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Debug|x64.ActiveCfg = Debug|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Debug|x64.Build.0 = Debug|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.GPU|Any CPU.ActiveCfg = Debug|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.GPU|Any CPU.Build.0 = Debug|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.GPU|x64.ActiveCfg = Debug|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.GPU|x64.Build.0 = Debug|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Release|x64.ActiveCfg = Release|x64
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D9AD1698-1571-4070-887B-6DAC7450D5F5} = {B1A09C01-75D1-4DE4-BF45-0FD3114D1827}
+		{754947FF-07C3-4B6A-A48E-BAB6111889D3} = {B1A09C01-75D1-4DE4-BF45-0FD3114D1827}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D34C27B8-EA42-4D73-9FB3-7605D882FAEF}
