@@ -1,3 +1,6 @@
 [submodule "ext/LLamaSharp"]
 	path = ext/LLamaSharp
 	url = https://github.com/allisterb/LLamaSharp.git
+[submodule "ext/llama.cpp"]
+	path = ext/llama.cpp
+	url = https://github.com/allisterb/llama.cpp.git
